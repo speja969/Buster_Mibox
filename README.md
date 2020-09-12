@@ -14,16 +14,16 @@
 _` sudo apt update && sudo apt full-upgrade`_
 1. instaliranje git-a  
 _`sudo apt install git`_
-1. kloniranje git repozitorijuma Buster_Pejax  
-_`git clone https://github.com/speja969/Buster_Pejax.git`_
+1. kloniranje git repozitorijuma Buster_Mibox  
+_`git clone https://github.com/speja969/Buster_Mibox.git`_
 1. promena aktivnog direktorijuma  
-_`cd Buster_Pejax`_
-1. maksimalno podizanje ovlašćenja pristupa repozitorijumu Buster_Pejax rekurzivno  
+_`cd Buster_Mibox`_
+1. maksimalno podizanje ovlašćenja pristupa repozitorijumu Buster_Mibox rekurzivno  
 _`sudo chmod --recursive 777 .`_
 1. promena aktivnog direktorijuma  
 _`cd scripts`_
-1. Startovanje skripte _Buster_Pejax.sh_  
-_`sudo ./Buster_Pejax.sh`_
+1. Startovanje skripte _Buster_Mibox.sh_  
+_`sudo ./Buster_Mibox.sh`_
 1. Restart  
 _`sudo reboot`_
 1. Posle restarta potrebno je u konfiguracionim fajlovima **ncmpcpp** (_`~/.mpd/mpd.conf`_ i _`~/.ncmpcpp/config`_)  
