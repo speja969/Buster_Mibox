@@ -47,12 +47,8 @@ _`sudo adduser $USER vboxsf`_
 
 ![Tiling capabilities](https://user-images.githubusercontent.com/62497469/92691918-af710700-f343-11ea-957f-2f8a56197b0b.png)
 ![Cheese_20 09 2_11 54 55](https://user-images.githubusercontent.com/62497469/91967654-cb592500-ed13-11ea-9b6b-18d53566a27d.png)
-![Double Commander](https://user-images.githubusercontent.com/62497469/92326972-72acc380-f056-11ea-9880-e0922fd20094.png)
-![Font Manager](https://user-images.githubusercontent.com/62497469/92327031-03839f00-f057-11ea-8662-4e6f9cd7dfbf.png)
 ![Geany](https://user-images.githubusercontent.com/62497469/92327061-36c62e00-f057-11ea-86ca-130de1247d59.png)
 ![gnome-disk-utiliti](https://user-images.githubusercontent.com/62497469/92327077-6412dc00-f057-11ea-84c8-e8927f1ad1c0.png)
-![Mousepad](https://user-images.githubusercontent.com/62497469/92327101-96243e00-f057-11ea-8b99-917800a6fd1b.png)
 ![Nitrogen](https://user-images.githubusercontent.com/62497469/92327116-ba801a80-f057-11ea-8058-7b023d0aa7cf.png)
 ![PCManFM](https://user-images.githubusercontent.com/62497469/92327132-e00d2400-f057-11ea-9c7f-0be41bee339d.png)
-![rxvt-unicode](https://user-images.githubusercontent.com/62497469/92327166-07fc8780-f058-11ea-8e74-79cfda46f425.png)
 ![Xarchiver](https://user-images.githubusercontent.com/62497469/92327192-3712f900-f058-11ea-8244-359d9ba9f1a0.png)
