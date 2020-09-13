@@ -119,7 +119,7 @@ cd ~/projects/debian-openbox/config_bash-prompt
 sudo ./install.sh
 
 cd ~/projects/debian-openbox
-sudo ./install -a grub
+#sudo ./install -a grub
 
 # Copy wallpapers folderes
 sudo cp -r ~/Buster_Mibox/WALLPAPERS/Wallpapers_Debian /usr/share/backgrounds
@@ -133,8 +133,8 @@ sudo sed -i 's!/usr/share/backgrounds/wallpapers-pack1/bl-colorful-aptenodytes-f
 cd ~/projects/debian-openbox/15_openbox_wallpaper-packs
 sudo ./install.sh
 
-sudo cp ~/Buster_Mibox/WALLPAPERS/Wallpapers_Debian/lightdm_login.jpg /usr/share/images/desktop-base
-sudo chmod 777 /usr/share/images/desktop-base/lightdm_login.jpg
+#sudo cp ~/Buster_Mibox/WALLPAPERS/Wallpapers_Debian/lightdm_login.jpg /usr/share/images/desktop-base
+#sudo chmod 777 /usr/share/images/desktop-base/lightdm_login.jpg
 
 sudo chmod --recursive 777 ~/.config/nitrogen
 
