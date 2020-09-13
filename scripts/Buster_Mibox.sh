@@ -118,6 +118,10 @@ sudo ./install.sh
 cd ~/projects/debian-openbox/config_bash-prompt
 sudo ./install.sh
 
+cd ~/projects/debian-openbox/10_openbox_nomacs-viewer
+sudo ./install.sh
+sudo chmod 777 ~/.config/nomacs/Image Lounge.conf
+
 cd ~/projects/debian-openbox
 #sudo ./install -a grub
 
