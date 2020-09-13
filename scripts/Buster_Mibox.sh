@@ -120,7 +120,7 @@ sudo ./install.sh
 
 cd ~/projects/debian-openbox/10_openbox_nomacs-viewer
 sudo ./install.sh
-sudo chmod 777 ~/.config/nomacs/Image Lounge.conf
+sudo chmod --recursive 777 ~/.config/nomacs
 
 cd ~/projects/debian-openbox
 #sudo ./install -a grub
