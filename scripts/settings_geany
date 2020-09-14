@@ -1,5 +1,8 @@
 #!/bin/bash
 
+default_user=$(logname 2>/dev/null || echo ${SUDO_USER:-${USER}})
+HOME="/home/${default_user}"
+
 mkdir -p ~/.config/geany/colorschemes
 wget https://raw.github.com/geany/geany-themes/master/colorschemes/monokai.conf -O ~/.config/geany/colorschemes/monokai.conf
 wget https://raw.github.com/geany/geany-themes/master/colorschemes/bespin.conf -O ~/.config/geany/colorschemes/bespin.conf 
