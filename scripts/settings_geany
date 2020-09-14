@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir ~/.config/geany/colorschemes
+mkdir -p ~/.config/geany/colorschemes
 wget https://raw.github.com/geany/geany-themes/master/colorschemes/monokai.conf -O ~/.config/geany/colorschemes/monokai.conf
 wget https://raw.github.com/geany/geany-themes/master/colorschemes/bespin.conf -O ~/.config/geany/colorschemes/bespin.conf 
 wget https://raw.github.com/geany/geany-themes/master/colorschemes/black.conf -O ~/.config/geany/colorschemes/black.conf
