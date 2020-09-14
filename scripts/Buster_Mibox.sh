@@ -81,6 +81,10 @@ cp ~/Buster_Mibox/scripts/screeny ~/.scripts
 ## script for reinstall youtube-dl
 cp ~/Buster_Mibox/scripts/reinstall_youtube-dl.sh ~/.scripts
 
+## Geany theme settings
+cp ~/Buster_Mibox/scripts/settings_geany ~/.scripts
+sudo ./settings_geany
+
 ## obmenu-generator
 cp ~/Buster_Mibox/scripts/obmenu-generator.sh ~/.scripts
 
