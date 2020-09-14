@@ -84,7 +84,8 @@ cp ~/Buster_Mibox/scripts/reinstall_youtube-dl.sh ~/.scripts
 ## Geany theme settings
 cp ~/Buster_Mibox/scripts/settings_geany ~/.scripts
 sudo ./settings_geany
-sudo sed -i 's!color_scheme=!color_scheme=monokai.conf!' ~/.config/geany/geany.conf
+cp ~/Buster_Mibox/dotfiles/geany.conf ~/.config/geany
+sudo chmod 777 ~/.config/geany/geany.conf
 
 ## obmenu-generator
 cp ~/Buster_Mibox/scripts/obmenu-generator.sh ~/.scripts
