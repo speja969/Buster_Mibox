@@ -41,4 +41,4 @@ wget https://raw.github.com/geany/geany-themes/master/colorschemes/zenburn.conf 
 
 sudo chmod --recursive 777 ~/.config/geany
 
-sudo sed -i 's!color_scheme=!color_scheme=monokai.conf!' ~/.config/geany/geany.conf
+
