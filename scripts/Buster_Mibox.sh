@@ -160,10 +160,12 @@ xdg-mime default pcmanfm.desktop inode/directory
 
 ## settings htop.desktop
 echo "Exec=x-terminal-emulator -T 'htop task manager' -e htop" > /tmp/htop_replacement
-
 sudo sed -i "s/^.*Exec=htop.*$/$(cat /tmp/htop_replacement)/" /usr/share/applications/htop.desktop
-
 sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/htop.desktop
+
+## settings rxvt-unicode.desktop
+sudo sed -i 's!Exec=urxvt!Exec=urxvtc!g' /usr/share/applications/rxvt-unicode.desktop
+sudo sed -i 's!OnlyShowIn=Unity!OnlyShowIn=Openbox!' /usr/share/applications/rxvt-unicode.desktop
 
 cp -R ~/Buster_Mibox/ext/ ~/.urxvt/
 sudo chmod -R 777 ~/.urxvt
