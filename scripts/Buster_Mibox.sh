@@ -19,7 +19,7 @@ sudo apt-get install -y software-properties-common && sudo apt-add-repository co
 
 sudo apt-get update
 
-sudo apt-get install -y openbox obmenu firefox-esr pcmanfm tint2 menu pulseaudio pavucontrol mlocate lxappearance arandr apt-file synaptic firmware-linux firmware-linux-nonfree xutils mesa-utils xarchiver htop wicd gnome-disk-utility python3-pip python-pip ttf-mscorefonts-installer fonts-ubuntu fonts-ubuntu-console suckless-tools simplescreenrecorder geany gdebi fbxkb mpv curl gmrun xscreensaver  pnmixer sxiv scrot xsettingsd ffmpeg git qbittorrent wmctrl xinit xorg xserver-xorg
+sudo apt-get install -y openbox obmenu firefox-esr pcmanfm-qt tint2 rxvt-unicode menu pulseaudio pavucontrol mlocate lxappearance arandr apt-file synaptic firmware-linux firmware-linux-nonfree xutils mesa-utils xarchiver htop wicd gnome-disk-utility python3-pip python-pip ttf-mscorefonts-installer fonts-ubuntu fonts-ubuntu-console suckless-tools simplescreenrecorder geany gdebi fbxkb mpv curl gmrun xscreensaver  pnmixer sxiv scrot xsettingsd ffmpeg git qbittorrent wmctrl xinit xorg xserver-xorg
 
 echo "exec openbox-session" >> ~/.xinitrc
 
@@ -161,4 +161,5 @@ sudo sed -i "s/^.*Exec=htop.*$/$(cat /tmp/htop_replacement)/" /usr/share/applica
 
 sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/htop.desktop
 
-
+cp -R ~/Buster_Pejax_v2/ext/ ~/.urxvt/
+sudo chmod -R 777 ~/.urxvt
