@@ -33,6 +33,8 @@ cp ~/Buster_Mibox/dotfiles/tint2rc ~/.config/tint2
 cp ~/Buster_Mibox/dotfiles/autostart.sh ~/.config/openbox
 
 cp ~/Buster_Mibox/dotfiles/.Xresources ~/
+sudo chmod 777 ~/.Xresources
+xrdb -merge ~/.Xresources
 
 cp ~/Buster_Mibox/dotfiles/rc.xml ~/.config/openbox
 
