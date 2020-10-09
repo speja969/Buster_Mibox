@@ -162,5 +162,5 @@ sudo sed -i "s/^.*Exec=htop.*$/$(cat /tmp/htop_replacement)/" /usr/share/applica
 
 sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/htop.desktop
 
-cp -R ~/Buster_Pejax_v2/ext/ ~/.urxvt/
+cp -R ~/Buster_Mibox/ext/ ~/.urxvt/
 sudo chmod -R 777 ~/.urxvt
