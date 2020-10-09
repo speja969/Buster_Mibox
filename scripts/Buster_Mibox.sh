@@ -97,8 +97,8 @@ git clone https://github.com/speja969/debian-openbox.git
 sudo chmod --recursive 777 ~/projects
 sudo chmod --recursive 777 ~/.scripts
 
-cd ~/projects/debian-openbox/10_openbox_terminator
-sudo ./install.sh
+# cd ~/projects/debian-openbox/10_openbox_terminator
+# sudo ./install.sh
 
 cd ~/projects/debian-openbox/10_openbox_arc-theme-gtk
 sudo ./install.sh
