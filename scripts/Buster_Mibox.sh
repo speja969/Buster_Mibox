@@ -169,5 +169,5 @@ sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/htop.deskt
 sudo sed -i 's!Exec=urxvt!Exec=urxvtc!g' /usr/share/applications/rxvt-unicode.desktop
 sudo sed -i 's!OnlyShowIn=Unity!OnlyShowIn=Openbox!' /usr/share/applications/rxvt-unicode.desktop
 
-cp -R ~/Buster_Mibox/ext/ ~/.urxvt/
+cp -R ~/Buster_Mibox/ext ~/.urxvt/
 sudo chmod -R 777 ~/.urxvt
