@@ -83,6 +83,7 @@ cp ~/Buster_Mibox/scripts/reinstall_youtube-dl.sh ~/.scripts
 
 ## Geany theme settings
 cp ~/Buster_Mibox/scripts/settings_geany ~/.scripts
+cd ~/.scripts
 sudo ./settings_geany
 cp ~/Buster_Mibox/dotfiles/geany.conf ~/.config/geany
 sudo chmod 777 ~/.config/geany/geany.conf
