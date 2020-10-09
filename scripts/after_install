@@ -1,0 +1,24 @@
+## provera da aktivni $USER ima potpuna ovašćenja
+# echo $HOME
+# echo $USER
+# sudo chown -R $USER:$USER $HOME
+# sudo chmod -R 700 $HOME
+
+## posle instalacije dodati:
+## sudo geany ~/.bashrc
+## export PATH=$PATH:/opt
+## export PATH=$PATH:/sbin
+## export PATH=$PATH:/usr/sbin
+## export PATH=$PATH:$HOME/.scripts
+
+
+## sudo geany /etc/sudoers
+## speja ALL=(ALL) NOPASSWD: ALL
+
+
+## install KVANTUM (za premošćivanje tema za QT programe)
+# sudo apt install qt5-style-kvantum qt5-style-kvantum-themes
+# sudo su
+# echo "export QT_STYLE_OVERRIDE=kvantum" >> /etc/environment
+# exit
+# restart
