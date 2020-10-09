@@ -2,8 +2,10 @@
 URxvt.scrollBar: false
 
 ! FONTS
-URxvt.font:             xft:Ubuntu Mono:style=Regular:pixelsize=16
-URxvt.boldFont:         xft:Ubuntu Mono:style=Bold:pixelsize=16
+urxvt*boldColors: on
+urxvt*font:     xft:Monaco:pixelsize=15:antialias=true:hinting=true:medium
+urxvt*boldFont: xft:Monaco:pixelsize=15:antialias=true:hinting=true:bold
+URxvt.letterSpace: -4
 
 ! special
 !*.foreground:   #c7ccd1
@@ -124,6 +126,11 @@ URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.urlLauncher: firefox
 URxvt.underlineURLs: true
 URxvt.urlButton: 1
+
+urxvt.perl-lib:                     /home/peja/.urxvt/ext/font
+urxvt.keysym.Control-Shift-Up:      perl:font:increment
+urxvt.keysym.Control-Shift-Down:    perl:font:decrement
+urxvt.perl-ext-common:              font
 
 ! Use a truetype font and size.
 xterm*faceName: Monospace
