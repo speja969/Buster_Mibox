@@ -66,6 +66,9 @@ sudo sed -i 's/<allow_active>auth_admin/<allow_active>yes/' /usr/share/polkit-1/
 # korekcija autorizacije za synaptic
 sudo sed -i 's/<allow_active>auth_admin/<allow_active>yes/' /usr/share/polkit-1/actions/com.ubuntu.pkexec.synaptic.policy
 
+# korekcija autorizacije za GParted
+sudo sed -i 's/<allow_active>auth_admin/<allow_active>yes/' /usr/share/polkit-1/actions/org.gnome.gparted.policy
+
 sudo chmod --recursive 777 ~/.config/openbox
 sudo chmod 777 ~/keyboard.sh
 
