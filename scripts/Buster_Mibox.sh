@@ -175,4 +175,4 @@ sudo sed -i 's!OnlyShowIn=Unity!OnlyShowIn=Openbox!' /usr/share/applications/rxv
 cp -R ~/Buster_Mibox/ext ~/.urxvt/
 sudo chmod -R 777 ~/.urxvt
 sudo chmod 777 ~/.Xresources
-xrdb -merge ~/.Xresources
+cd ~; ln -s .Xresources .Xdefaults-$(hostname)
