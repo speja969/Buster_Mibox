@@ -171,6 +171,7 @@ echo "Exec=x-terminal-emulator -T 'htop task manager' -e htop" > /tmp/htop_repla
 sudo sed -i "s/^.*Exec=htop.*$/$(cat /tmp/htop_replacement)/" /usr/share/applications/htop.desktop
 sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/htop.desktop
 
+## settings gparted.desktop
 echo "Exec=su-to-root -X -c /usr/sbin/gparted" > /tmp/gparted_replacement
 sudo sed -i "s/^.*Exec=/usr/sbin/gparted.*$/$(cat /tmp/gparted_replacement)/" /usr/share/applications/gparted.desktop
 
