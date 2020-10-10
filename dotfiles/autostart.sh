@@ -21,3 +21,6 @@ compton -cC -i 0.85 -e 0.85 -m 0.9 -r 4 -l -4 -t -4 &
 
 # Start screensaver
 xscreensaver -no-splash &
+
+# Turn on Numlock at start-up
+numlockx on &
