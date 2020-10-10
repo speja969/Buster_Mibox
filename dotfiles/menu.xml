@@ -3,7 +3,7 @@
 	<menu id="root-menu" label="Openbox 3">
 		<item label="Terminal emulator">
 			<action name="Execute">
-				<execute>x-terminal-emulator</execute>
+				<execute>urxvtc</execute>
 			</action>
 		</item>
 		<item label="Web browser">
@@ -24,30 +24,15 @@
 		</item>
 		<separator/>
 		<separator/>
-		<item label="PCManFM">
+		<item label="PCManFM-qt">
 			<action name="Execute">
-				<execute>pcmanfm</execute>
-			</action>
-		</item>
-		<item label="Double Commander">
-			<action name="Execute">
-				<execute>doublecmd</execute>
-			</action>
-		</item>
-		<item label="Ranger">
-			<action name="Execute">
-				<execute>x-terminal-emulator -T 'ranger task manager' -e ranger</execute>
+				<execute>pcmanfm-qt</execute>
 			</action>
 		</item>
 		<separator/>
 		<item label="Geany">
 			<action name="Execute">
 				<execute>geany</execute>
-			</action>
-		</item>
-		<item label="Mousepad">
-			<action name="Execute">
-				<execute>mousepad</execute>
 			</action>
 		</item>
 		<separator/>
@@ -77,9 +62,9 @@
 		<menu execute="/usr/bin/obamenu" id="applications-menu" label="Applications"/>
 		<separator/>
 		<separator/>
-		<item label="VLC Player">
+		<item label="MPV Player">
 			<action name="Execute">
-				<execute>vlc</execute>
+				<execute>mpv</execute>
 			</action>
 		</item>
 		<item label="ncmpcpp">
@@ -99,9 +84,9 @@
 				<execute>obconf</execute>
 			</action>
 		</item>
-		<item label="Disk Manager">
+		<item label="GParted">
 			<action name="Execute">
-				<execute>su-to-root -X -c /usr/sbin/disk-manager</execute>
+				<execute>/sbin/gparted</execute>
 			</action>
 		</item>
 		<item label="Reconfigure">
