@@ -179,7 +179,7 @@ sudo sed -i "s/^.*Exec=/usr/sbin/gparted.*$/$(cat /tmp/gparted_replacement)/" /u
 sudo sed -i 's!Exec=urxvt!Exec=urxvtc!g' /usr/share/applications/rxvt-unicode.desktop
 sudo sed -i 's!OnlyShowIn=Unity!OnlyShowIn=Openbox!' /usr/share/applications/rxvt-unicode.desktop
 
-cp -R ~/Buster_Mibox/ext ~/.urxvt/
+cp -R ~/Buster_Mibox/ext ~/.urxvt/ext/
 sudo chmod -R 777 ~/.urxvt
 sudo chmod 777 ~/.Xresources
 cd ~; ln -s .Xresources .Xdefaults-$(hostname)
