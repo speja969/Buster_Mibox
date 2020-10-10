@@ -64,7 +64,7 @@
 		<separator/>
 		<item label="MPV Player">
 			<action name="Execute">
-				<execute>mpv</execute>
+				<execute>mpv --player-operation-mode=pseudo-gui</execute>
 			</action>
 		</item>
 		<item label="ncmpcpp">
