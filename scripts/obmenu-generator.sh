@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 default_user=$(logname 2>/dev/null || echo ${SUDO_USER:-${USER}})
@@ -17,7 +18,7 @@ obmenu-generator -s -i
 
 obmenu-generator -p -i
 
-sed -i 's!xterm!terminator!' ~/.config/obmenu-generator/schema.pl
+sed -i 's!xterm!urxvtc!' ~/.config/obmenu-generator/schema.pl
 
 sed -i 's!~/.config/openbox/autostart!~/.config/openbox/autostart.sh!' ~/.config/obmenu-generator/schema.pl
 
@@ -25,7 +26,10 @@ sed -i 's!{exit!#{exit!' ~/.config/obmenu-generator/schema.pl
 
 sudo sed -i 's_# {item_{item_g;s/oblogout/obsession-logout/g' ~/.config/obmenu-generator/schema.pl
 
-sed -i 's!xterm!terminator!' ~/.config/obmenu-generator/config.pl	
+sed -i 's!xterm!urxvtc!' ~/.config/obmenu-generator/config.pl	
 
 
 sed -i 's!<showIcons>no</showIcons>!<showIcons>yes</showIcons>!' ~/.config/openbox/rc.xml
+
+sudo chmod +x ~/.config/obmenu-generator/*
+sudo chmod 777 ~/.config/obmenu-generator
