@@ -184,8 +184,10 @@ sudo sed -i 's!OnlyShowIn=Unity!OnlyShowIn=Openbox!' /usr/share/applications/rxv
 
 mkdir -p ~/.urxvt/ext
 cp ~/Buster_Mibox/ext/* ~/.urxvt/ext/
+sudo chmod 666 ~/.urxvt
+sudo chmod 666 ~/.urxvt/ext
 sudo chmod 777 ~/.urxvt/ext/*
 sudo chmod 777 ~/.Xresources
-cd ~; ln -s .Xresources .Xdefaults-$(hostname)
+# cd ~; ln -s .Xresources .Xdefaults-$(hostname)
 
 # sudo chown -R ${USER}:$(id -g -n $USER) ~/*
