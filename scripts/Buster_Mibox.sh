@@ -19,7 +19,7 @@ sudo apt-get install -y software-properties-common && sudo apt-add-repository co
 
 sudo apt-get update
 
-sudo apt-get install -y openbox obmenu firefox-esr tint2 rxvt-unicode menu xsel pulseaudio pavucontrol numlockx mlocate gparted lxappearance arandr apt-file synaptic firmware-linux firmware-linux-nonfree xutils mesa-utils xarchiver htop wicd gnome-disk-utility python3-pip python-pip ttf-mscorefonts-installer fonts-ubuntu fonts-ubuntu-console suckless-tools simplescreenrecorder geany gdebi fbxkb mpv curl gmrun xscreensaver  pnmixer sxiv scrot xsettingsd ffmpeg git apt-rdepends transmission-common wmctrl xinit xorg xserver-xorg
+sudo apt-get install -y openbox obmenu firefox-esr tint2 menu xsel pulseaudio pavucontrol numlockx mlocate gparted lxappearance arandr apt-file synaptic firmware-linux firmware-linux-nonfree xutils mesa-utils xarchiver htop wicd gnome-disk-utility python3-pip python-pip ttf-mscorefonts-installer fonts-ubuntu fonts-ubuntu-console suckless-tools simplescreenrecorder geany gdebi fbxkb mpv curl gmrun xscreensaver  pnmixer sxiv scrot xsettingsd ffmpeg git apt-rdepends transmission-common wmctrl xinit xorg xserver-xorg
 
 sudo apt install -y pcmanfm-qt --no-install-recommends
 sudo apt autoremove
@@ -111,8 +111,8 @@ git clone https://github.com/speja969/debian-openbox.git
 sudo chmod --recursive 777 ~/projects
 sudo chmod --recursive 777 ~/.scripts
 
-# cd ~/projects/debian-openbox/10_openbox_terminator
-# sudo ./install.sh
+cd ~/projects/debian-openbox/10_openbox_rxvt-unicode
+sudo ./install.sh
 
 cd ~/projects/debian-openbox/10_openbox_arc-theme-gtk
 sudo ./install.sh
@@ -184,11 +184,11 @@ sudo sed -i 's!OnlyShowIn=Unity!OnlyShowIn=Openbox!' /usr/share/applications/rxv
 
 mkdir -p ~/.urxvt/ext
 cp ~/Buster_Mibox/ext/* ~/.urxvt/ext/
-sudo chmod 666 ~/.urxvt
-sudo chmod 666 ~/.urxvt/ext
-sudo chmod 777 ~/.urxvt/ext/*
-sudo chmod 777 ~/.Xresources
-xrdb -merge ~/.Xresources
+
+sudo chown -R $(logname):$(logname) /home/$(logname)/
+find /home/$(logname) -name '.*' | xargs sudo chown $(logname):$(logname)
+find /home/$(logname) -type f | xargs sudo chmod 700
+
 # cd ~; ln -s .Xresources .Xdefaults-$(hostname)
 
 # sudo chown -R ${USER}:$(id -g -n $USER) ~/*
