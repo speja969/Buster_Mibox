@@ -188,6 +188,7 @@ sudo chmod 666 ~/.urxvt
 sudo chmod 666 ~/.urxvt/ext
 sudo chmod 777 ~/.urxvt/ext/*
 sudo chmod 777 ~/.Xresources
+xrdb -merge ~/.Xresources
 # cd ~; ln -s .Xresources .Xdefaults-$(hostname)
 
 # sudo chown -R ${USER}:$(id -g -n $USER) ~/*
