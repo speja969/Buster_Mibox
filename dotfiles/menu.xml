@@ -69,7 +69,7 @@
 		</item>
 		<item label="ncmpcpp">
 			<action name="Execute">
-				<execute>x-terminal-emulator -T 'ncmpcpp' -e ncmpcpp</execute>
+				<execute>urxvtc -T 'ncmpcpp' -e ncmpcpp</execute>
 			</action>
 		</item>
 		<separator/>
