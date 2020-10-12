@@ -183,7 +183,7 @@ sudo sed -i 's!Exec=urxvt!Exec=urxvtc!g' /usr/share/applications/rxvt-unicode.de
 sudo sed -i 's!OnlyShowIn=Unity!OnlyShowIn=Openbox!' /usr/share/applications/rxvt-unicode.desktop
 
 mkdir -p ~/.urxvt/ext
-cp ~/Buster_Mibox/ext/* ~/.urxvt/ext/
+cp -p ~/Buster_Mibox/ext/* ~/.urxvt/ext/
 
 sudo chown -R $(logname):$(logname) /home/$(logname)/
 find /home/$(logname) -name '.*' | xargs sudo chown $(logname):$(logname)
