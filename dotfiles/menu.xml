@@ -19,7 +19,7 @@
 		<!-- This requires the presence of the 'openbox-menu' package to work -->
 		<item label="htop">
 			<action name="Execute">
-				<execute>x-terminal-emulator -T 'htop task manager' -e htop</execute>
+				<execute>urxvtc -T 'htop task manager' -e htop</execute>
 			</action>
 		</item>
 		<separator/>
