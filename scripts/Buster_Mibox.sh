@@ -123,7 +123,7 @@ sudo ./install.sh
 
 cd ~/projects/debian-openbox/install_wpsoffice
 sudo ./install.sh
-cp ~/Bullseye_Pejax/scripts/install_missing_wps_fonts.sh ~/.scripts
+cp ~/Buster_Mibox/scripts/install_missing_wps_fonts.sh ~/.scripts
 cd ~/.scripts
 sudo ./install_missing_wps_fonts.sh
 
