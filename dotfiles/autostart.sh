@@ -26,3 +26,5 @@ xscreensaver -no-splash &
 numlockx on &
 
 # xrdb -merge ~/.Xresources
+
+lxpanel &
